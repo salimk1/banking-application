@@ -1,0 +1,59 @@
+Thoroughly Tested Class Using JUnit: InvestRepository.java
+JUnit Test Class: InvestRepositoryTest.java
+JUnit Test Class Location: banking-application\src\test\java\ca\ucalgary\datastore
+
+
+@Test - test_constructor_stocksList()
+
+This method tests that the constructor in the InvestRepository class retrieves the correct
+stock information from the Telegraph website and generates the correct stocks array list. The 
+stocks list must contain stocks from the FTSE 250 index. The methods tests this by checking if
+a known stock from the FTSE 250 index, is in the generated stocks list.
+
+
+@Test - test_constructor_symbolsList()
+
+This method tests that the constructor in the InvestRepository class generates the correct
+stock symbols list from the stocks list. The symbols list should only contain the stock symbols.
+
+
+@Test - test_addStock_validSymbolValidAmount()
+
+This method tests that the addStock() method in the InvestRepository class adds a stock to the
+portfolio text file when a valid stock symbol and a valid number of shares are passed as 
+arguments. 
+
+
+@Test - test_addStock_validSymbolInvalidAmount()
+
+This method tests that the addStock() method in the InvestRepository class does not add a stock 
+to the portfolio text file when a valid stock symbol and an invalid number of shares are passed 
+as arguments. 
+
+
+@Test - test_addStock_invalidSymbolValidAmount()
+
+This method tests that the addStock() method in the InvestRepository class does not add a stock 
+to the portfolio text file when an invalid stock symbol and a valid number of shares are passed 
+as arguments. 
+
+
+@Test - test_addStock_invalidSymbolInvalidAmount()
+
+This method tests that the addStock() method in the InvestRepository class does not add a stock 
+to the portfolio text file when an invalid stock symbol and an invalid number of shares are 
+passed as arguments.
+
+
+@Test - test_checkStocksExists_validSymbol()
+
+This method tests that the validSymbol() method in the InvestRepository class returns the boolean
+value true when a valid stock symbol is passed as an argument. A valid stock symbol is a stock
+that is in the FTSE 250 index.
+
+
+@Test - test_checkStocksExists_InvalidSymbol()
+
+This method tests that the validSymbol() method in the InvestRepository class returns the boolean
+value false when an invalid stock symbol is passed as an argument. An invalid stock symbol is a 
+stock that is not in the FTSE 250 index.

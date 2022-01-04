@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="669.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.ucalgary.gui.budget.BudgetController">
+   <children>
+      <AnchorPane fx:id="budgetPane" layoutX="1.0" prefHeight="669.0" prefWidth="473.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label fx:id="expenseLabel" alignment="CENTER" layoutX="140.0" layoutY="71.0" prefHeight="379.0" prefWidth="217.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Corbel" size="18.0" />
+               </font></Label>
+            <Pane blendMode="SRC_ATOP" layoutX="-1.0" layoutY="-1.0" opacity="0.31" prefHeight="48.0" prefWidth="500.0" style="-fx-background-color: #4169E1;" />
+            <Label fx:id="budgetLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="48.0" prefWidth="500.0" text="Budget" textFill="#000000a4">
+               <font>
+                  <Font name="Corbel" size="23.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="editBudgetButton" layoutX="141.0" layoutY="484.0" onAction="#openMenu" opacity="0.7" prefHeight="48.0" prefWidth="217.0" ripplerFill="#7793e9a3" style="-fx-background-color: #191970;" text="Edit Budget" textFill="WHITE">
+               <font>
+                  <Font name="Corbel" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

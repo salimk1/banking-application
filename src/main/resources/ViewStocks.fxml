@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.ucalgary.gui.invest.InvestController">
+   <children>
+      <AnchorPane fx:id="viewPane" prefHeight="669.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="47.0" prefHeight="48.0" prefWidth="500.0" text="View All Stocks" textFill="#000000a4">
+               <font>
+                  <Font name="Corbel" size="18.0" />
+               </font>
+            </Label>
+            <Pane blendMode="SRC_ATOP" layoutY="47.0" opacity="0.15" prefHeight="48.0" prefWidth="500.0" style="-fx-background-color: #4169E1;" />
+            <Pane layoutY="94.0" prefHeight="575.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <ScrollPane fx:id="resultPane" layoutX="87.0" layoutY="22.0" prefHeight="451.0" prefWidth="327.0">
+                     <content>
+                        <ScrollBar orientation="VERTICAL" prefHeight="449.0" prefWidth="14.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </Pane>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-1.0" prefHeight="48.0" prefWidth="500.0" text="Invest" textFill="#000000a4">
+               <font>
+                  <Font name="Corbel" size="23.0" />
+               </font>
+            </Label>
+            <Pane blendMode="SRC_ATOP" layoutY="-1.0" opacity="0.31" prefHeight="48.0" prefWidth="500.0" style="-fx-background-color: #4169E1;" />
+            <JFXButton fx:id="btnBVAL" layoutX="444.0" layoutY="47.0" onAction="#BackV" opacity="0.7" prefHeight="48.0" prefWidth="56.0" ripplerFill="#4169e1a3" style="-fx-background-color: #191970;" text="Back" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="669.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.ucalgary.gui.login.LoginController">
+   <children>
+      <AnchorPane layoutY="-1.0" opacity="0.31" prefHeight="48.0" prefWidth="500.0" style="-fx-background-color: #4169E1;" />
+      <AnchorPane layoutY="311.0" opacity="0.31" prefHeight="48.0" prefWidth="500.0" style="-fx-background-color: #4169E1;" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="-2.0" prefHeight="48.0" prefWidth="500.0" text="Login" textFill="#000000a4">
+         <font>
+            <Font name="Corbel" size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="emailSignIn" labelFloat="true" layoutX="164.0" layoutY="95.0" prefHeight="25.0" prefWidth="174.0" promptText="Client I.D." unFocusColor="#4059a9" />
+      <JFXPasswordField fx:id="passwordSignIn" labelFloat="true" layoutX="164.0" layoutY="160.0" prefHeight="25.0" prefWidth="174.0" promptText="Password" unFocusColor="#4059a9" />
+      <JFXButton fx:id="signInButton" layoutX="206.0" layoutY="222.0" onAction="#signIn" opacity="0.7" prefHeight="48.0" prefWidth="97.0" ripplerFill="#7793e9a3" style="-fx-background-color: #191970;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Corbel" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="311.0" prefHeight="48.0" prefWidth="500.0" text="Register" textFill="#000000a4">
+         <font>
+            <Font name="Corbel" size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="firstName" labelFloat="true" layoutX="43.0" layoutY="398.0" prefHeight="25.0" prefWidth="174.0" promptText="First Name" unFocusColor="#4059a9">
+         <font>
+            <Font name="Corbel" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="lastName" labelFloat="true" layoutX="288.0" layoutY="398.0" prefHeight="25.0" prefWidth="174.0" promptText="Last Name" unFocusColor="#4059a9">
+         <font>
+            <Font name="Corbel" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="emailSignUp" labelFloat="true" layoutX="163.0" layoutY="483.0" prefHeight="25.0" prefWidth="174.0" promptText="Client I.D." unFocusColor="#4059a9" />
+      <JFXPasswordField fx:id="passwordSignUp" labelFloat="true" layoutX="163.0" layoutY="532.0" prefHeight="25.0" prefWidth="174.0" promptText="Password" unFocusColor="#4059a9" />
+      <Separator layoutX="10.0" layoutY="461.0" opacity="0.75" prefHeight="1.0" prefWidth="481.0" />
+      <JFXButton fx:id="signUpButton" layoutX="200.0" layoutY="588.0" onAction="#signUp" opacity="0.7" prefHeight="48.0" prefWidth="110.0" ripplerFill="#7793e9a3" style="-fx-background-color: #191970;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Corbel" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="139.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/glyph/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="139.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/glyph/password.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="139.0" layoutY="488.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/glyph/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="139.0" layoutY="537.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/glyph/password.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

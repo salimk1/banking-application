@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.ucalgary.gui.budget.BudgetController">
+   <children>
+      <AnchorPane fx:id="menuPane" prefHeight="669.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Pane layoutY="136.0" prefHeight="533.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <JFXButton fx:id="addExpenseButton" layoutX="142.0" layoutY="104.0" onAction="#addExpense" opacity="0.7" prefHeight="48.0" prefWidth="217.0" ripplerFill="#7793e9a3" style="-fx-background-color: #191970;" text="Add Expense" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="removeExpenseButton" layoutX="142.0" layoutY="188.0" onAction="#removeExpense" opacity="0.7" prefHeight="48.0" prefWidth="217.0" ripplerFill="#7793e9a3" style="-fx-background-color: #191970;" text="Remove Expense" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="editIncomeButton" layoutX="142.0" layoutY="267.0" onAction="#editIncome" opacity="0.7" prefHeight="48.0" prefWidth="217.0" ripplerFill="#7793e9a3" style="-fx-background-color: #191970;" text="Edit Income" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel" size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-1.0" prefHeight="48.0" prefWidth="500.0" text="Budget" textFill="#000000a4">
+               <font>
+                  <Font name="Corbel" size="23.0" />
+               </font>
+            </Label>
+            <Pane blendMode="SRC_ATOP" layoutY="-1.0" opacity="0.31" prefHeight="48.0" prefWidth="500.0" style="-fx-background-color: #4169E1;" />
+            <JFXButton fx:id="backButton" layoutX="444.0" layoutY="-2.0" onAction="#closeMenu" opacity="0.7" prefHeight="48.0" prefWidth="56.0" ripplerFill="#4169e1a3" style="-fx-background-color: #191970;" text="Back" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

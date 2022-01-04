@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main" prefHeight="669.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.ucalgary.gui.accounts.AccountDetailsController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="-1.0" prefHeight="279.0" prefWidth="473.0">
+         <children>
+            <Label layoutX="45.0" layoutY="72.0" text="Account Number" underline="true">
+               <font>
+                  <Font name="Corbel" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="212.0" layoutY="72.0" text="Account Type" underline="true">
+               <font>
+                  <Font name="Corbel" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="366.0" layoutY="72.0" text="Balance" underline="true">
+               <font>
+                  <Font name="Corbel" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="accountNoText" alignment="CENTER" layoutX="41.0" layoutY="98.0" prefHeight="19.0" prefWidth="113.0" text="Account No">
+               <font>
+                  <Font name="Courier New Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="typeText" alignment="CENTER" layoutX="211.0" layoutY="95.0" prefHeight="19.0" prefWidth="91.0" text="Type">
+               <font>
+                  <Font name="Courier New Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="balanceText" alignment="CENTER" layoutX="356.0" layoutY="95.0" prefHeight="19.0" prefWidth="69.0" text="Balance">
+               <font>
+                  <Font name="Courier New Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="withdrawButton" layoutX="17.0" layoutY="198.0" onAction="#withdrawAction" prefHeight="35.0" prefWidth="207.0" style="-fx-background-color: #77cd7b;" text="Withdraw" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="withdrawAmount" alignment="CENTER" focusColor="#77cd7b" layoutX="17.0" layoutY="145.0" prefHeight="43.0" prefWidth="207.0" style="-fx-background-color: dddddd;">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="depositButton" layoutX="248.0" layoutY="198.0" onAction="#depositAction" prefHeight="35.0" prefWidth="207.0" style="-fx-background-color: #77cd7b;" text="Deposit" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="depositAmount" alignment="CENTER" focusColor="#77cd7b" layoutX="248.0" layoutY="145.0" prefHeight="43.0" prefWidth="207.0" style="-fx-background-color: dddddd;">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="7.0" layoutY="257.0" prefHeight="331.0" prefWidth="486.0">
+         <children>
+            <TableView fx:id="transactionTable" layoutY="42.0" prefHeight="363.0" prefWidth="486.0">
+              <columns>
+                <TableColumn fx:id="transactionColumn" prefWidth="112.0" text="Transaction Ref" />
+                <TableColumn fx:id="typeColumn" prefWidth="102.0" text="Type" />
+                  <TableColumn fx:id="amountColumn" prefWidth="119.0" text="Amount" />
+                  <TableColumn fx:id="dateColumn" prefWidth="152.0" sortType="DESCENDING" text="Date" />
+              </columns>
+            </TableView>
+            <Label alignment="CENTER" layoutX="-2.0" layoutY="4.0" prefHeight="23.0" prefWidth="486.0" text="Transaction History">
+               <font>
+                  <Font name="Corbel" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="budgetLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="500.0" text="Accounts" textFill="#000000a4">
+         <font>
+            <Font name="Corbel" size="23.0" />
+         </font>
+      </Label>
+      <Pane blendMode="SRC_ATOP" layoutY="-2.0" opacity="0.31" prefHeight="48.0" prefWidth="500.0" style="-fx-background-color: #4169E1;" />
+   </children>
+</AnchorPane>
